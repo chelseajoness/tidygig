@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "TidyGig",
+    "slug": "tidygig",
+    "version": "1.0.0",
+    "scheme": "tidygig",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tidygig.app"
+    },
+    "android": {
+      "package": "com.tidygig.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "@react-native-community/datetimepicker",
+      "expo-web-browser",
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "TidyGig uses your location to match hosts with nearby cleaners." }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        { "merchantIdentifier": "merchant.com.tidygig.app", "enableGooglePay": false }
+      ]
+    ]
+  }
+}
